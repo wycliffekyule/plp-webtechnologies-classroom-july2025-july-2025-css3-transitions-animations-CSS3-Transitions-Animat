@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynamic CSS Animations</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Button to animate the box -->
+  <h2>1. Animate Box on Click</h2>
+  <button onclick="triggerBoxAnimation()">Animate Box</button>
+  <div class="box" id="animateBox"></div>
+
+  <!-- Card Flip on Hover -->
+  <h2>2. Card Flip on Hover</h2>
+  <div class="card-container">
+    <div class="card">
+      <div class="front">Front</div>
+      <div class="back">Back</div>
+    </div>
+  </div>
+
+  <!-- Loading Animation -->
+  <h2>3. Toggle Loading Animation</h2>
+  <button onclick="toggleLoading()">Start/Stop Loading</button>
+  <div class="loader" id="loader"></div>
+
+  <!-- Modal Popup -->
+  <h2>4. Modal with Slide/Fade Animation</h2>
+  <button onclick="toggleModal(true)">Open Modal</button>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <p>This is a modal window!</p>
+      <button onclick="toggleModal(false)">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
